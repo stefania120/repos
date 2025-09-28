@@ -7,7 +7,12 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("../fonts/Norse-Bold.woff");
+    
 }
 
 /* Container principale: due colonne */
@@ -18,9 +23,9 @@ html, body {
 
 /* Colonna sinistra: immagine */
 #main-sfondo {
-    width: 50%; /* puoi cambiare la larghezza */
+    width: 765px; /* puoi cambiare la larghezza */
+    height: 765px;
     position: relative;
-    height: 100%;
     overflow: hidden;
 }
 
@@ -32,21 +37,32 @@ html, body {
 
 /* Logo sopra immagine */
 #logo {
+    width: 532px;
+    height: 142px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 300px;
+    left: 0px;
     display: flex;
     align-items: center;
     gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #logo img {
-    height: 50px;
+    height: 80%;
 }
 
 #logo h1 {
     color: white;
     font-family: 'Norse-Bold', sans-serif; /* il tuo font personalizzato */
+    font-size: 7em;
+    padding-top: 30px;
 }
 
 /* Colonna destra: form */
