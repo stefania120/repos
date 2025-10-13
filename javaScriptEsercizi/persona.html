@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi JavaScript</title>
+</head>
+<script>
+    class Persona {
+        constructor(nome, cognome) {
+            this.nome = nome;
+            this.cognome = cognome;
+        }
+        saluto() {
+            console.log(`Ciao ${this.nome}`, this.cognome);
+        }
+    }
+
+    const persona = new Persona("Luca", "Rossi");
+    persona.saluto();
+</script>
+
+<body>
+
+</body>
+
+</html>
