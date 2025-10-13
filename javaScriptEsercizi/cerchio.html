@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerchio</title>
+</head>
+<body>
+    <script>
+        // Creare una classe "Cerchio" con proprietà raggio e un metodo per calcolare l'area.
+        //area= TT r^2
+
+        class Cerchio {
+            constructor (raggio){
+                this.raggio = raggio;
+            }
+
+            areaCerchio(){
+                const piGreco = 3.14;
+                return piGreco * this.raggio **2;
+            }
+        }
+        const cerchio = new Cerchio(2);
+        const area = cerchio.areaCerchio();
+        console.log("Area del cerchio: ",area);
+    </script>
+    
+</body>
+</html>
