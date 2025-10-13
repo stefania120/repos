@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro</title>
+</head>
+<body>
+    <script>
+        // Creare una classe "Libro" con proprietà titolo e autore. Aggiungere un metodo "dettagli" alla classe "Libro" che stampi i dettagli del libro.
+
+        class Libro{
+            constructor (titolo,autore) {
+                this.titolo = titolo;
+                this.autore = autore;
+            }
+            dettagli () {
+                console.log(`Titolo: ${this.titolo}, Autore: ${this.autore}`);
+            }
+        }
+        const libro = new Libro("Intelligenza emotiva","Daniel Goleman");
+        console.log(libro);
+    </script>
+    
+</body>
+</html>
