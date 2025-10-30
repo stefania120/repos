@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!--
+    Creare un form per lasciare un commento all'articolo.
+    Il form dovrà avere come metodo di invio post e dovrà prevedere i seguenti campi:
+    - Nome (richiesto)
+    - Email (richiesto)
+    - Sito web
+    - Commento (richiesto)
+    - Scelta se ricevere o meno le notifiche per i nuovi commenti 
+    -Accettazione della privacy (richiesto)
+    -->
+
+    <main>
+            <form method="POST">
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="sitoWeb">Sito web: </label>
+                    <input type="url" name="sitoWeb" id="sitoWeb">
+                </div>
+                <div>
+                    <p>Commenta qui...</p>
+                    <textarea name="commento" id="commento" required></textarea>
+                </div>
+                <div>
+                    <p>Notifiche: </p>
+
+                    <label for="si">Si</label>
+                    <input type="radio" name="notifiche" id="si">
+
+                    <label for="no">No</label>
+                    <input type="radio" name="notifiche" id="no">
+
+                </div>
+                <div>
+                    <label for="privacy">Accettazione della privacy</label>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                </div>
+
+                <input type="submit" value="Invia">
+            </form>
+    </main>
+</body>
+
+</html>
