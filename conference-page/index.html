@@ -38,7 +38,8 @@
       <h1 class="display-4">Digital Marketing Conference</h1>
       <p class="lead">La conferenza sul Digital N. 1 in Italia. Ti aspettiamo!</p>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrati</button>
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Registrati</button>
         <a class="btn btn-light btn-lg" href="#experts">Gli esperti</a>
       </div>
     </div>
@@ -206,15 +207,54 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Registrati all'evento</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Cognome</label>
+              <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Accetto la privacy policy
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
