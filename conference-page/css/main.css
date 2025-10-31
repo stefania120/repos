@@ -1,12 +1,12 @@
 .hero-banner {
-    padding: 60px 0;
+    padding: 116px 0;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url("../images/conf.jpeg") center no-repeat;
     background-size: cover;
 }
 
 @media (min-width: 768px) {
     .hero-banner {
-        padding: 120px 0;
+        padding: 176px 0 120px;
     }
 
 }
